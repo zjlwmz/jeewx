@@ -1,0 +1,141 @@
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.layui-layim-weixinAudio .db {
+	display: block;
+}
+
+.layui-layim-weixinAudio {
+	line-height: 1.5;
+}
+
+.layui-layim-weixinAudio .audio_area {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	margin: 0px 1px 0px 0;
+	font-size: 0;
+	position: relative;
+	font-weight: 400;
+	text-decoration: none;
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+.layui-layim-weixinAudio .audio_wrp {
+	border: 1px solid #ebebeb;
+	background-color: #fcfcfc;
+	overflow: hidden;
+	padding: 2px 5px 2px 5px;
+    border-radius: 2px;
+}
+
+.layui-layim-weixinAudio .audio_play_area {
+	float: left;
+	margin: 9px 22px 10px 5px;
+	font-size: 0;
+	width: 18px;
+	height: 25px;
+}
+
+.layui-layim-weixinAudio .playing .audio_play_area .icon_audio_default {
+	display: block;
+}
+
+.layui-layim-weixinAudio .audio_play_area .icon_audio_default {
+	background: transparent url(../img/iconloop.png) no-repeat 0 0;
+	width: 18px;
+	height: 25px;
+	vertical-align: middle;
+	display: inline-block;
+	-webkit-background-size: 54px 25px;
+	background-size: 54px 25px;
+	background-position: -36px center;
+}
+
+.layui-layim-weixinAudio .audio_play_area .icon_audio_playing {
+	background: transparent url(../img/iconloop.png) no-repeat 0 0;
+	width: 18px;
+	height: 25px;
+	vertical-align: middle;
+	display: inline-block;
+	-webkit-background-size: 54px 25px;
+	background-size: 54px 25px;
+	-webkit-animation: audio_playing 1s infinite;
+	background-position: 0px center;
+	display: none;
+}
+
+.layui-layim-weixinAudio .audio_area .pic_audio_default {
+	display: none;
+	width: 18px;
+}
+
+.layui-layim-weixinAudio .tips_global {
+	color: #8c8c8c;
+}
+
+.layui-layim-weixinAudio .audio_area .audio_length {
+	float: right;
+	font-size: 14px;
+	margin-top: 3px;
+	margin-left: 1em;
+	line-height: 40px;
+}
+
+.layui-layim-weixinAudio .audio_info_area {
+	overflow: hidden;
+	display: none;
+}
+
+.layui-layim-weixinAudio .audio_area .audio_title {
+	font-weight: 400;
+	font-size: 17px;
+	margin-top: -2px;
+	margin-bottom: -3px;
+	width: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+.layui-layim-weixinAudio .audio_area .audio_source {
+	font-size: 14px;
+}
+
+.layui-layim-weixinAudio .audio_area .progress_bar {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: #0cbb08;
+	height: 2px;
+}
+
+.layui-layim-weixinAudio .playing .audio_play_area .icon_audio_default {
+	display: none;
+}
+
+.layui-layim-weixinAudio .playing .audio_play_area .icon_audio_playing {
+	display: inline-block;
+}
+
+@-webkit-keyframes audio_playing {
+	30% {
+		background-position: 0px center;
+	}
+	31% {
+		background-position: -18px center;
+	}
+	61% {
+		background-position: -18px center;
+	}
+	61.5% {
+		background-position: -36px center;
+	}
+	100% {
+		background-position: -36px center;
+	}
+}
